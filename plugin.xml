@@ -31,16 +31,18 @@
     </platform>
 
     <!-- ios -->
-    <!--
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Device">
-                <param name="ios-package" value="CDVDevice"/>
+            <feature name="FlurryPlugin">
+                <param name="ios-package" value="FlurryPlugin" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
-
-        <header-file src="src/ios/CDVDevice.h" />
-        <source-file src="src/ios/CDVDevice.m" />
+        <header-file src="src/ios/FlurryPlugin.h" />
+        <header-file src="src/ios/Flurry.h" />
+        <source-file src="src/ios/FlurryPlugin.m" />
+        <source-file src="src/ios/libFlurry_4.3.2.a" framework="true" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="Security.framework" />
     </platform>
-    -->
 </plugin>
