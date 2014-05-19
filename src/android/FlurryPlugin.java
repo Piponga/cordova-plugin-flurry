@@ -28,6 +28,7 @@ public class FlurryPlugin extends CordovaPlugin {
     	String flurryKey="__FLURRY_KEY__";  // replaced by build script. better to pull from a a config file? could use config.xml but would have to re-load (outside of cordova's load)
     	if(flurryKey!=null && !flurryKey.equals("") && !flurryKey.contains("FLURRY_KEY")){
     		Log.d(LOG_TAG, "Starting Flurry Session: " + flurryKey);
+        FlurryAgent.setCaptureUncaughtExceptions(false);
     		FlurryAgent.onStartSession(webView.getContext(), flurryKey);
     	}
 		super.initialize(cordova, webView);
