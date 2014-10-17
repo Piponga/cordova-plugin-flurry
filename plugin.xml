@@ -10,6 +10,10 @@
     <keywords>flurry,analytics</keywords>
     <repo>git@git.wnyc.net:mobile/cordova/cordova-plugin-flurry.git</repo>
 
+    <js-module src="www/flurry.js" name="Flurry">
+      <clobbers target="flurry"/>
+    </js-module>
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
