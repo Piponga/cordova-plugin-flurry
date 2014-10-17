@@ -5,16 +5,16 @@ var exec = require("cordova/exec");
  */    
 var Flurry = function(){};
 
-Flurry.prototype.logevent = function(success, error, options) {
-  exec(success, error, "FlurryPlugin", "logevent", options);
+Flurry.prototype.logevent = function(success, error, eventName, params, label, timed) {
+  exec(success, error, "FlurryPlugin", "logevent", [eventName, params, label, timed]);
 };
 
-Flurry.prototype.logscreenview = function(success, error, options) {
-  exec(success, error, "FlurryPlugin", "logscreenview", options);
+Flurry.prototype.logscreenview = function(success, error, screen) {
+  exec(success, error, "FlurryPlugin", "logscreenview", [screen]);
 };
 
-Flurry.prototype.endtimedevent = function(success, error, options) {
-  exec(success, error, "FlurryPlugin", "endtimedevent", options);
+Flurry.prototype.endtimedevent = function(success, error, eventName) {
+  exec(success, error, "FlurryPlugin", "endtimedevent", [eventName]);
 };
 
 module.exports = new Flurry();
