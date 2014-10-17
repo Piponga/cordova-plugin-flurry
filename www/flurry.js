@@ -13,7 +13,7 @@ Flurry.prototype.logscreenview = function(success, error, options) {
   exec(success, error, "FlurryPlugin", "logscreenview", options);
 };
 
-Flurry.prototype.logscreenview = function(success, error, options) {
+Flurry.prototype.endtimedevent = function(success, error, options) {
   exec(success, error, "FlurryPlugin", "endtimedevent", options);
 };
 
