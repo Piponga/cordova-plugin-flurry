@@ -1,9 +1,5 @@
 //
 //  FlurryPlugin.m
-//  NYPRNative
-//
-//  Created by Brad Kammin on 4/1/14.
-//
 //
 
 #import "FlurryPlugin.h"
