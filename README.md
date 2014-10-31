@@ -9,7 +9,7 @@ This plugin supports PhoneGap/Cordova apps running on both iOS and Android.
 This plugin is meant to work with Cordova 3.5.0+ and the latest version of the Flurry library.
 
 Flurry documentation and integration guides for iOS and Android:
-[website](http://support.flurry.com/?title=Analytics/GettingStarted). 
+http://support.flurry.com/?title=Analytics/GettingStarted 
 
 ## Installation
 
