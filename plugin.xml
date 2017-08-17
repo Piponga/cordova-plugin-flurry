@@ -31,7 +31,7 @@
         </config-file>
 
         <source-file src="src/android/FlurryPlugin.java" target-dir="src/org/nypr/cordova/flurryplugin/" />
-        <source-file src="src/android/FlurryAgent.jar" target-dir="libs" />
+        <source-file src="src/android/flurryAnalytics_7.2.3.jar" target-dir="libs" />
     </platform>
 
     <!-- ios -->
